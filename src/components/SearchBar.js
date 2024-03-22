@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 export default class SearchBar extends Component {
+  //the state object contains the term that will be used to search for relevant videos
   state = { term: "" };
 
   onInputChange = (event) => {
