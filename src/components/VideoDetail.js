@@ -1,6 +1,7 @@
 import React from "react";
 
 const VideoDetail = ({ video }) => {
+  //if no videos are available then the loading string will be displayed
   if (!video) {
     return <div>Loading...</div>;
   }
