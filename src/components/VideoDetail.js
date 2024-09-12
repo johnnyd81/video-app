@@ -6,6 +6,7 @@ const VideoDetail = ({ video }) => {
     return <div>Loading...</div>;
   }
 
+  //videoSrc is the base URL for each displayed video
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
