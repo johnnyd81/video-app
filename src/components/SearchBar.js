@@ -4,6 +4,7 @@ export default class SearchBar extends Component {
   //the state object contains the term that will be used to search for relevant videos
   state = { term: "" };
 
+  //the function below updates the stateful term variable 
   onInputChange = (event) => {
     this.setState({ term: event.target.value });
   };
