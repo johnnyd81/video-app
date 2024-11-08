@@ -8,7 +8,7 @@ export default class App extends Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit("need for speed");
+    this.onTermSubmit("the fast and the furious");
   }
 
   onTermSubmit = async (term) => {
