@@ -11,7 +11,7 @@ export default class App extends Component {
     this.onTermSubmit();
   }
 
-  onTermSubmit = async (term = "The fast and the furious") => {
+  onTermSubmit = async (term = "Fast and the furious 6") => {
     const response = await youtube.get("/search", {
       params: {
         q: term,
