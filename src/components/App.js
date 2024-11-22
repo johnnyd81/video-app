@@ -8,10 +8,10 @@ export default class App extends Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit("Fast and the furious");
+    this.onTermSubmit();
   }
 
-  onTermSubmit = async (term) => {
+  onTermSubmit = async (term = "The fast and the furious") => {
     const response = await youtube.get("/search", {
       params: {
         q: term,
@@ -20,7 +20,7 @@ export default class App extends Component {
 
     this.setState({
       videos: response.data.items,
-      selectedVideo: response.data.items[2],
+      selectedVideo: response.data.items[0],
     });
   };
 
