@@ -20,7 +20,7 @@ export default class App extends Component {
 
     this.setState({
       videos: response.data.items,
-      selectedVideo: response.data.items[0],
+      selectedVideo: response.data.items[2],
     });
   };
 
